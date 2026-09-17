@@ -1,7 +1,7 @@
 # AGENTS.md
 
-Notes for agents and humans working on this repo — the **AI Journey 3D
-mesh-quality** solution (Sber AI, generative models).
+Notes for agents and humans working on this repo — the **AI Challenge**
+([aiijc.com](https://aiijc.com/), Sber) 3D mesh-quality solution.
 
 ## Layout
 

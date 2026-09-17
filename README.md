@@ -1,7 +1,8 @@
 # 3D Mesh Quality Control
 
 Detect defects on 3D meshes and classify every object as good or bad. Solution
-for the **AI Journey** main-stage task (Sber AI, generative models).
+for the **AI Challenge** main-stage task ([aiijc.com](https://aiijc.com/), Sber
+AI generative-models area).
 
 **Metric:** `10·F1(quality) + 10·F1_weighted(defects)` (out of 20).
 **Result:** fused probe **OOF 13.68 · public LB 13.86** — best single backbone
