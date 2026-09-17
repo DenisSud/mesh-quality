@@ -1,0 +1,78 @@
+{
+  "item_id": "f08554bd-68a7-43d6-af5a-e0f8bd43e093",
+  "split": "test",
+  "labels": {
+    "artifacts": {
+      "probability": 0.9205865859985352,
+      "threshold": 0.6000000238418579,
+      "top_cells": [
+        {
+          "tile": 0,
+          "row": 3,
+          "col": 3,
+          "saliency": 1.0
+        },
+        {
+          "tile": 2,
+          "row": 3,
+          "col": 4,
+          "saliency": 0.9946510195732117
+        },
+        {
+          "tile": 1,
+          "row": 3,
+          "col": 4,
+          "saliency": 0.37803027033805847
+        },
+        {
+          "tile": 4,
+          "row": 5,
+          "col": 4,
+          "saliency": 0.31823548674583435
+        },
+        {
+          "tile": 0,
+          "row": 5,
+          "col": 6,
+          "saliency": 0.3050585985183716
+        }
+      ]
+    },
+    "noisy": {
+      "probability": 0.6917067170143127,
+      "threshold": 0.5,
+      "top_cells": [
+        {
+          "tile": 0,
+          "row": 3,
+          "col": 3,
+          "saliency": 1.0
+        },
+        {
+          "tile": 2,
+          "row": 3,
+          "col": 4,
+          "saliency": 0.9975766539573669
+        },
+        {
+          "tile": 1,
+          "row": 3,
+          "col": 4,
+          "saliency": 0.2428240329027176
+        },
+        {
+          "tile": 1,
+          "row": 3,
+          "col": 5,
+          "saliency": 0.19511382281780243
+        },
+        {
+          "tile": 4,
+          "row": 5,
+          "col": 4,
+          "saliency": 0.1389644593000412
+        }
+      ]
+    }
+  }
+}

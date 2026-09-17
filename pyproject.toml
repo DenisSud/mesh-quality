@@ -1,0 +1,71 @@
+[project]
+name = "aiijc"
+version = "0.1.0"
+description = "AI Journey contest solutions"
+readme = "README.md"
+authors = [
+    { name = "DenisSud", email = "sudakov.denis.2007@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    # Numeric / scientific base
+    "numpy>=2.5.3",
+    "pandas>=3.0.5",
+    "scikit-image>=0.26.0",
+    "scikit-learn>=1.9.1",
+    "pillow>=12.3.0",
+    # JAX stack (CUDA 13 pip wheels; see devenv.nix for driver/ptxas wiring)
+    "jax[cuda13]",
+    "flax>=0.12.9",
+    "optax>=0.2.8",
+    # PyTorch stack (CUDA 13.2 build; see [tool.uv.sources])
+    "torch>=2.14.0",
+    "torchvision>=0.29.0",
+    # cuTile (CUDA Tile Python DSL). The [tileiras] extra pulls the Tile IR
+    # compiler + matching nvidia-cuda-nvcc/nvvm wheels into the venv.
+    "cuda-tile[tileiras]",
+    # Training / experiment utilities
+    "einops",
+    "matplotlib",
+    "pyyaml",
+    "rich",
+    "safetensors>=0.8.0",
+    "tensorboard",
+    "tqdm",
+    # Model / dataset ecosystem
+    "datasets",
+    "timm",
+    "transformers",
+    # Notebook deliverables (jupytext sources -> .ipynb, nbclient smoke runs)
+    "jupytext>=1.16.4",
+    "nbformat>=5.10.4",
+    "nbclient>=0.10.2",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel",
+    "pytest",
+    "ruff",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+# CUDA wheel index for PyTorch. `explicit = true` keeps it out of the default
+# resolution, so every non-torch package still comes from PyPI.
+[[tool.uv.index]]
+name = "pytorch-cu132"
+url = "https://download.pytorch.org/whl/cu132"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu132" }
+torchvision = { index = "pytorch-cu132" }
+
+[tool.pytest.ini_options]
+# Task tests live next to their task (currently mesh-quality only); the task
+# package is importable via `src/` without installing anything.
+testpaths = ["main/mesh-quality/tests"]
+pythonpath = ["main/mesh-quality/src"]

@@ -1,0 +1,78 @@
+{
+  "item_id": "f4e78e59-9495-416b-be05-21f62e2638b3",
+  "split": "test",
+  "labels": {
+    "open": {
+      "probability": 0.9356918931007385,
+      "threshold": 0.4000000059604645,
+      "top_cells": [
+        {
+          "tile": 2,
+          "row": 3,
+          "col": 5,
+          "saliency": 1.0
+        },
+        {
+          "tile": 0,
+          "row": 6,
+          "col": 5,
+          "saliency": 0.6826022267341614
+        },
+        {
+          "tile": 2,
+          "row": 4,
+          "col": 4,
+          "saliency": 0.5325525403022766
+        },
+        {
+          "tile": 0,
+          "row": 2,
+          "col": 4,
+          "saliency": 0.5304774045944214
+        },
+        {
+          "tile": 0,
+          "row": 4,
+          "col": 3,
+          "saliency": 0.4852306544780731
+        }
+      ]
+    },
+    "simple": {
+      "probability": 0.6316942572593689,
+      "threshold": 0.699999988079071,
+      "top_cells": [
+        {
+          "tile": 0,
+          "row": 4,
+          "col": 5,
+          "saliency": 1.0
+        },
+        {
+          "tile": 2,
+          "row": 4,
+          "col": 4,
+          "saliency": 0.9242932200431824
+        },
+        {
+          "tile": 2,
+          "row": 3,
+          "col": 5,
+          "saliency": 0.7712470889091492
+        },
+        {
+          "tile": 1,
+          "row": 3,
+          "col": 3,
+          "saliency": 0.6220213174819946
+        },
+        {
+          "tile": 0,
+          "row": 4,
+          "col": 3,
+          "saliency": 0.57695072889328
+        }
+      ]
+    }
+  }
+}

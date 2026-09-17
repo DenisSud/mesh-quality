@@ -1,0 +1,50 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Data
+*.crdownload
+
+# Outputs
+cache/
+
+# Data / artifacts (kept on disk, not in git)
+weights/
+data_zips/
+За окном шумно/
+Уровень освещённости/
+Я вернусь позже/
+
+# Main-stage datasets (large downloads)
+main/mesh-quality/data/*
+!main/mesh-quality/data/.gitkeep
+!main/mesh-quality/data/*.csv
+main/*/data/*.zip
+main/*/data/*.tar
+main/*/data/*.tar.gz
+
+# Devenv
+.devenv*
+devenv.local.nix
+devenv.local.yaml
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
+
+# QAOA autoresearch loop (runtime state, logs, agent cache)
+main/qaoa/autoresearch/logs/
+main/qaoa/autoresearch/workspace/
+main/qaoa/targets/
+
+# mesh-quality deliverables: staged Colab bundle + notebook smoke-run outputs
+main/mesh-quality/deliver/
+main/mesh-quality/notebooks/*.executed.ipynb
+main/mesh-quality/mesh_quality_work/
+main/mesh-quality/presentation/page-*.png
+
+# Local reference copies (regenerable)
+main/mesh-quality/explorer.html
